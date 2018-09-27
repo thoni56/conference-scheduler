@@ -1,0 +1,66 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach",
+            "port": 9229,
+            "protocol": "inspector"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Meteor: Chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "timeout": 20000
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Meteor: Node",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["start"],
+            "outputCapture": "std",
+            "port": 9229,
+            "timeout": 30000,
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Meteor: Server Tests",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+              "run",
+              "test"
+            ],
+            "outputCapture": "std",
+            "port": 9229,
+            "timeout": 360000,
+            "console": "integratedTerminal"
+          },
+          {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Meteor: Client Tests",
+            "url": "http://localhost:3010",
+            "webRoot": "${workspaceFolder}",
+            "timeout": 30000
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Meteor: All",
+            "configurations": ["Meteor: Node", "Meteor: Chrome"]
+        },
+        {
+            "name": "Meteor: All Tests",
+            "configurations": [
+                "Meteor: Server Tests",
+                "Meteor: Client Tests"
+            ]
+        }
+    ]
+}
