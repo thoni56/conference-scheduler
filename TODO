@@ -1,0 +1,10 @@
+☐ Datamodel
+    ☐ Slot (->venue, ->track) - title, start, end
+    ☐ Track - colouring
+    ☐ Venue - name, order
+☐ Edit forms
+    ☐ Slot
+    ☐ Track
+    ☐ Venue
+☐ Layout
+    ☐ Calculate position and size of slot from start and end
