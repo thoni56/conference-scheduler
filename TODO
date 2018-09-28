@@ -1,5 +1,5 @@
 ☐ Datamodel
-    ☐ Slot (->venue, ->track) - title, start, end
+    ☐ Slot (->venue, ->track) - title, speaker, start, end
     ☐ Track - colouring
     ☐ Venue - name, order
 ☐ Edit forms
