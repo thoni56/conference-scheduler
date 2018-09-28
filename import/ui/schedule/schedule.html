@@ -1,5 +1,4 @@
 <template name="schedule">
-    <div>Schedule</div>
     <div class="cd-schedule loading">
         <div class="timeline">
             <ul>
@@ -24,8 +23,12 @@
                 <li><span>18:00</span></li>
             </ul>
         </div> <!-- .timeline -->
+        <div class="events">
+            <ul>
+                {{#each venues}}
+                {{> venue}}
+                {{/each}}
+            </ul>
+        </div>
     </div>
-    {{#each venues}}
-    {{> venue}}
-    {{/each}}
 </template>
