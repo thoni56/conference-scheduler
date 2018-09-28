@@ -1,7 +1,7 @@
 <template name="slot">
-    <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1"
+    <li class="single-event" data-start="{{start}}" data-end="{{end}}" data-content="event-abs-circuit" data-event="event-1"
         style="top: 49px; height: 101px;">
-        <a href="#0"><span class="event-date">09:30 - 10:30</span>
+        <a href="#0"><span class="event-date">{{start}} - {{end}}</span>
             <em class="event-name">{{title}}</em>
         </a>
     </li>
