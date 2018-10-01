@@ -1,5 +1,10 @@
 import { Template } from 'meteor/templating';
-import { Slots } from '/import/api/slots';
 
 import './slot.html';
 import './insertSlotForm.html';
+
+
+Template.slot.helpers({
+    top: "80",
+    height: "200"
+});
