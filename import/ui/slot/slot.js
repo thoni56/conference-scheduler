@@ -4,14 +4,23 @@ import './slot.html';
 import './insertSlotForm.html';
 
 
+const slotSize = 50;    // px
+const eventUnit = 30;   // minutes
+const timeLineStart = getScheduleTimestamp("09:00");
+
 Template.slot.helpers({
     top() {
-        const slotSize = 2;
-        const hm = this.start.split(":");
-        const s = (parseInt(hm[0])*60+parseInt(hm[1])-9*60)*slotSize;
-        return s;
+        return (getScheduleTimestamp(this.start)-timeLineStart)/eventUnit*slotSize;
     },
     height() {
-        return 200;
+        return (getScheduleTimestamp(this.end)-getScheduleTimestamp(this.start))/eventUnit*slotSize;
     }
 });
+
+function getScheduleTimestamp(time) {
+    //accepts hh:mm format - convert hh:mm to timestamp
+    time = time.replace(/ /g,'');
+    var timeArray = time.split(':');
+    var timeStamp = parseInt(timeArray[0])*60 + parseInt(timeArray[1]);
+    return timeStamp;
+}
