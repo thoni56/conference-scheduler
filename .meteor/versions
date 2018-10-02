@@ -49,7 +49,11 @@ mobile-status-bar@1.0.14
 modern-browsers@0.1.2
 modules@0.12.2
 modules-runtime@0.10.2
+<<<<<<< 99da48c5ae5f1af0a1ac320250d2891500f4076f
 momentjs:moment@2.10.6
+=======
+momentjs:moment@2.22.2
+>>>>>>> Remove explict timeslots
 mongo@1.5.1
 mongo-dev-server@1.1.0
 mongo-id@1.0.7

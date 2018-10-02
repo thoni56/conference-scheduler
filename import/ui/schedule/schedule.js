@@ -10,8 +10,9 @@ const timeslots = [
 Template.schedule.onRendered(function() {
     let ul = document.getElementById("timeslots");
     const start = moment().hours(8).minutes(30);
+    const end = moment().hours(18).minutes(30);
     console.log(start.format("hh:mm"));
-    for(var t in timeslots) {
+    while(start) {
         let li = document.createElement("li");
         let text = document.createTextNode(timeslots[t]);
         li.appendChild(text);
