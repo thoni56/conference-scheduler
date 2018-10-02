@@ -14,24 +14,17 @@ Schemas.Slots = new SimpleSchema({
     },
     venue: {
         type: String,
-        label: "Venue",
-        allowedValues: [
-            'Sopranen',
-            'Operan',
-            'Operetten'
-        ]
+        label: "Venue"
     },
     presenter: {
         type: String,
         label: "Presenter"
     },
     start: {
-        type: Date,
+        type: String,
         label: "Start",
         autoform: {
-            afFieldInput: {
-                type: "time"
-            }
+            type: "time"
         }
     },
     length: {
