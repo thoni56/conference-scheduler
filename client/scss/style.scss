@@ -318,6 +318,13 @@ Main Components
 	font-weight: normal;
 }
 
+
+.cd-schedule .single-event[data-event=track-0],
+.cd-schedule [data-event=track-0] .header-bg {
+	background: lightgray;
+}
+
+
 .cd-schedule .single-event[data-event=track-1],
 .cd-schedule [data-event=track-1] .header-bg {
 	/* this is used to set a background color for the event and the modal window */
