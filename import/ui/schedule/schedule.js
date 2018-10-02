@@ -9,7 +9,7 @@ Template.schedule.onRendered(function() {
     const end = moment().hours(18).minutes(30);
     while(time.isBefore(end)) {
         let li = document.createElement("li");
-        let text = document.createTextNode(time.format("hh:mm"));
+        let text = document.createTextNode(time.format("HH:mm"));
         li.appendChild(text);
         ul.appendChild(li);
         time.add(30, 'm');
