@@ -225,8 +225,8 @@ Main Components
 
 		.events-group > ul {
 			@include clearfix;
-			// 19 is the number of list items in the .timeline
-			height: $row-height*19;
+			// TODO: 41 is the number of list items in the .timeline, this should really be calculated from slot height
+			height: $row-height*41;
 			/* reset style */
 			display: block;
 			overflow: visible;
