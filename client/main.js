@@ -8,5 +8,3 @@ import { Slots } from '../import/api/slots';
 import './main.html';
 
 window.Slots = Slots;
-
-Slots.insert()
