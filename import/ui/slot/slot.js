@@ -6,8 +6,8 @@ import './insertSlotForm.html';
 
 export const startTime = "08:30";
 
-const slotSize = 50;    // px
-const eventUnit = 30;   // minutes
+const slotSize = 30;    // px
+const eventUnit = 15;   // minutes
 const timeLineStart = getScheduleTimestamp(startTime);
 
 Template.slot.helpers({
@@ -15,12 +15,12 @@ Template.slot.helpers({
         return (getScheduleTimestamp(this.start)-timeLineStart)/eventUnit*slotSize;
     },
     height() {
-        return (getScheduleTimestamp(this.end)-getScheduleTimestamp(this.start))/eventUnit*slotSize;
+        return this.length/eventUnit*slotSize;
     }
 });
 
 function getScheduleTimestamp(time) {
-    //accepts hh:mm format - convert hh:mm to timestamp
+    //accepts hh:mm format - convert hh:mm to "minute-stamp"
     time = time.replace(/ /g,'');
     var timeArray = time.split(':');
     var timeStamp = parseInt(timeArray[0])*60 + parseInt(timeArray[1]);

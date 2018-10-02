@@ -12,7 +12,7 @@ Template.schedule.onRendered(function() {
         let text = document.createTextNode(time.format("HH:mm"));
         li.appendChild(text);
         ul.appendChild(li);
-        time.add(30, 'm');
+        time.add(15, 'm');
     }
 })
 
