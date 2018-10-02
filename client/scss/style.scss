@@ -321,15 +321,13 @@ Main Components
 
 .cd-schedule .single-event[data-event=track-0],
 .cd-schedule [data-event=track-0] .header-bg {
-	background: lightgray;
+	background: $event-color-0;
 }
-
 
 .cd-schedule .single-event[data-event=track-1],
 .cd-schedule [data-event=track-1] .header-bg {
 	/* this is used to set a background color for the event and the modal window */
 	background: $event-color-1;
-	color: black;
 }
 
 .cd-schedule .single-event[data-event=track-1]:hover {
