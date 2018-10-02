@@ -4,9 +4,11 @@ import './slot.html';
 import './insertSlotForm.html';
 
 
+export const startTime = "08:30";
+
 const slotSize = 50;    // px
 const eventUnit = 30;   // minutes
-const timeLineStart = getScheduleTimestamp("09:00");
+const timeLineStart = getScheduleTimestamp(startTime);
 
 Template.slot.helpers({
     top() {
