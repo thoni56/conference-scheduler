@@ -3,20 +3,16 @@ import { moment } from 'meteor/momentjs:moment';
 
 import './schedule.html';
 
-const timeslots = [
-    "08:30", "09:00", "09:30", "10:00", "10:30"
-];
-
 Template.schedule.onRendered(function() {
     let ul = document.getElementById("timeslots");
-    const start = moment().hours(8).minutes(30);
+    const time = moment().hours(8).minutes(30);
     const end = moment().hours(18).minutes(30);
-    console.log(start.format("hh:mm"));
-    while(start) {
+    while(time.isBefore(end)) {
         let li = document.createElement("li");
-        let text = document.createTextNode(timeslots[t]);
+        let text = document.createTextNode(time.format("hh:mm"));
         li.appendChild(text);
         ul.appendChild(li);
+        time.add(30, 'm');
     }
 })
 
