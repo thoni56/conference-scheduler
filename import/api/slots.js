@@ -14,11 +14,13 @@ Schemas.Slots = new SimpleSchema({
     },
     venue: {
         type: String,
-        label: "Venue"
+        label: "Venue",
+        optional: true
     },
     presenter: {
         type: String,
-        label: "Presenter"
+        label: "Presenter",
+        defaultValue: ""
     },
     start: {
         type: String,
@@ -29,11 +31,13 @@ Schemas.Slots = new SimpleSchema({
     },
     length: {
         type: Number,
-        label: "Length (min)"
+        label: "Length (min)",
+        defaultValue: 25
     },
     track: {
         type: String,
-        label: "Track"
+        label: "Track",
+        defaultValue: "track-0"
     }
 
 });
