@@ -38,21 +38,34 @@ Meteor.startup(() => {
         presenter: "Kajsa Åhlin",
         venue: "Sopranen", start: "15:15", track: "track-1"
     });
-    Slots.insert({ title: "Från e-handel direkt till fabriksgolvet - Javascript i fabriken",
+    Slots.insert({
+        title: "Från e-handel direkt till fabriksgolvet - Javascript i fabriken",
         presenter: "Kristofer Skyttner",
         venue: "Operan", start: "15:15", track: "track-3"
-     });
+    });
+    Slots.insert({
+        title: "KEYNOTE: Lean & Kanban to the rescue - Historien om Bungsu-sjukhuset",
+        presenter: "Marcus Hammarberg",
+        venue: "Operan", start: "13:00", length: 55, track: "track-4"
+    });
+    Slots.insert({
+        title: "CLOSING TALK: Hur man blir innovativ i vardagen (eller på jobbet)",
+        presenter: "Tomas Ahlström",
+        venue: "Operan", start: "16:30", track: "track-4"
+    });
+    Slots.insert({
+        title: "Eftermigel",
+        start: "17:00", length: 90, track: "track-0"
+    });
     /*
-    Slots.insert({ title: "Teamets välmående som mätvärde", presenter: "Robert Gistvik" });
-    Slots.insert({ title: "KEYNOTE: Lean & Kanban to the rescue - Historien om Bungsu-sjukhuset", presenter: "Marcus Hammarberg" });
-    Slots.insert({ title: "CLOSING TALK: Hur man blir innovativ i vardagen (eller på jobbet)", presenter: "Tomas Ahlström" });
-    Slots.insert({ title: "Feedback på din roadmap", presenter: "Åsa Tjernvik" });
-    Slots.insert({ title: "Förändring i Legobyn - en fabel om olika förändringsmodeller", presenter: "Thom Persson" });
-    Slots.insert({ title: "DevOps - Tänk stort och starta smått", presenter: "Jari Aho" });
-    Slots.insert({ title: "15 förlösande frågor", presenter: "Björn Tikkanen" });
-    Slots.insert({ title: "Optimera ditt flöde - men av vaddå?", presenter: "Marcus Hammarberg" });
-    Slots.insert({ title: "Introvert, extrovert, eller mittemellan?", presenter: "Tobias Anderberg" });
-    Slots.insert({ title: "Gör en vana av att tänka test", presenter: "Johan Jonasson" });
-    Slots.insert({ title: "Mobb-arbete: Lärdomar och upplevda fördelar", presenter: "Martin Andersson" });
-    */
+       Slots.insert({ title: "Teamets välmående som mätvärde", presenter: "Robert Gistvik" });
+       Slots.insert({ title: "Feedback på din roadmap", presenter: "Åsa Tjernvik" });
+       Slots.insert({ title: "Förändring i Legobyn - en fabel om olika förändringsmodeller", presenter: "Thom Persson" });
+       Slots.insert({ title: "DevOps - Tänk stort och starta smått", presenter: "Jari Aho" });
+       Slots.insert({ title: "15 förlösande frågor", presenter: "Björn Tikkanen" });
+       Slots.insert({ title: "Optimera ditt flöde - men av vaddå?", presenter: "Marcus Hammarberg" });
+       Slots.insert({ title: "Introvert, extrovert, eller mittemellan?", presenter: "Tobias Anderberg" });
+       Slots.insert({ title: "Gör en vana av att tänka test", presenter: "Johan Jonasson" });
+       Slots.insert({ title: "Mobb-arbete: Lärdomar och upplevda fördelar", presenter: "Martin Andersson" });
+       */
 });

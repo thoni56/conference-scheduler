@@ -294,25 +294,28 @@ Main Components
 	font-size: 2.4rem;
 
 	@include MQ(M) {
+		width: 87%;
 		font-size: 0.8rem;
-		line-height: 1.2;
+		line-height: 1.1;
 	}
 }
 
 .cd-schedule .event-date {
 	/* they are not included in the the HTML but added using JavScript */
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	opacity: .7;
-	line-height: 1.2;
+	line-height: 1.1;
 	margin-bottom: .2em;
 	margin-right: .2em;
+	float: right;
+	width: 10%;
 }
 
 .cd-schedule .event-speaker {
 	/* they are not included in the the HTML but added using JavScript */
 	font-size: 0.8rem;
 	opacity: .7;
-	line-height: 1.2;
+	line-height: 1.1;
 	margin-bottom: .2em;
 	margin-right: .2em;
 	font-weight: normal;
