@@ -12,7 +12,7 @@ const timeLineStart = getScheduleTimestamp(startTime);
 
 Template.slot.helpers({
     geometry() {
-        const s = "style=\"top: "+top(this.start)+"px; height: "+height(this.length)+"px;\"";
+        const s = "top: "+top(this.start)+"px; height: "+height(this.length)+"px;"
         return s;
     }
 });
