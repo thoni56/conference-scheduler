@@ -107,7 +107,7 @@ Meteor.startup(() => {
         venue: "Operan", start: "14:30", track: "team"
     });
     Slots.insert({
-        title: "Mobb-arbete: Lärdomar och upplevda fördelar",
+        title: "Mobb-arbete: Lärdomar och fördelar",
         presenter: "Martin Andersson",
         venue: "Sopranen", start: "15:30", track: "team"
     });
