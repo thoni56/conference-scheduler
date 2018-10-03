@@ -346,12 +346,12 @@ Main Components
 	background: lighten($event-color-2, 5%);
 }
 
-.cd-schedule .single-event[data-event=track-3],
-.cd-schedule [data-event=track-3] .header-bg {
+.cd-schedule .single-event[data-event=tänk],
+.cd-schedule [data-event=tänk] .header-bg {
 	background: $event-color-3;
 }
 
-.cd-schedule .single-event[data-event=track-3]:hover {
+.cd-schedule .single-event[data-event=tänk]:hover {
 	background: lighten($event-color-3, 5%);
 }
 

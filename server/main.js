@@ -17,7 +17,7 @@ Meteor.startup(() => {
     Slots.insert({
         title: "15 förlösande frågor",
         presenter: "Björn Tikkanen",
-        venue: "Operetten", start: "11:00", track: "track-3"
+        venue: "Operetten", start: "11:00", track: "tänk"
     });
     Slots.insert({
         title: "Team och mångdimensionellt flyt",
@@ -27,7 +27,7 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Optimera ditt flöde - men av vaddå?",
         presenter: "Marcus Hammarberg",
-        venue: "Operetten", start: "11:30", track: "track-3"
+        venue: "Operetten", start: "11:30", track: "teknik"
     });
     Slots.insert({
         title: "Teamets välmående som mätvärde",
@@ -42,7 +42,7 @@ Meteor.startup(() => {
     Slots.insert({
         title: "War stories - Agilt ledarskap i verkligheten",
         presenter: "Maria Thelin",
-        venue: "Operan", start: "11:30", track: "track-3"
+        venue: "Operan", start: "11:30", track: "tänk"
     });
     Slots.insert({
         title: "Lunch",
@@ -70,12 +70,17 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Gör en vana av att tänka test",
         presenter: "Johan Jonasson",
-        venue: "Sopranen", start: "11:00", track: "track-3"
+        venue: "Sopranen", start: "11:00", track: "teknik"
     });
     Slots.insert({
         title: "CLOSING TALK: Hur man blir innovativ i vardagen (eller på jobbet)",
         presenter: "Tomas Ahlström",
-        venue: "Operan", start: "16:30", track: "keynote"
+        venue: "Operan", start: "16:00", length: 43, track: "keynote"
+    });
+    Slots.insert({
+        title: "AVSLUT: Reflektioner och medtag",
+        presenter: "Thomas Nilefalk",
+        venue: "Operan", start: "16:45", length: 13, track: "keynote"
     });
     Slots.insert({
         title: "Eftermigel",
@@ -84,12 +89,12 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Feedback på din roadmap",
         presenter: "Åsa Tjernvik",
-        venue: "Sopranen", start: "14:00", track: "track-3"
+        venue: "Sopranen", start: "14:00", track: "tänk"
     });
     Slots.insert({
         title: "Förändring i Legobyn - en fabel om olika förändringsmodeller",
         presenter: "Thom Persson",
-        venue: "Operetten", start: "14:30", track: "track-3"
+        venue: "Operetten", start: "14:30", track: "tänk"
     });
     Slots.insert({
         title: "DevOps - Tänk stort och starta smått",
