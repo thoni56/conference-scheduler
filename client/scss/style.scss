@@ -322,27 +322,27 @@ Main Components
 }
 
 
-.cd-schedule .single-event[data-event=track-0],
-.cd-schedule [data-event=track-0] .header-bg {
+.cd-schedule .single-event[data-event=paus],
+.cd-schedule [data-event=paus] .header-bg {
 	background: $event-color-0;
 }
 
-.cd-schedule .single-event[data-event=track-1],
-.cd-schedule [data-event=track-1] .header-bg {
+.cd-schedule .single-event[data-event=team],
+.cd-schedule [data-event=team] .header-bg {
 	/* this is used to set a background color for the event and the modal window */
 	background: $event-color-1;
 }
 
-.cd-schedule .single-event[data-event=track-1]:hover {
+.cd-schedule .single-event[data-event=team]:hover {
 	background: lighten($event-color-1, 5%);
 }
 
-.cd-schedule .single-event[data-event=track-2],
-.cd-schedule [data-event=track-2] .header-bg {
+.cd-schedule .single-event[data-event=teknik],
+.cd-schedule [data-event=teknik] .header-bg {
 	background: $event-color-2;
 }
 
-.cd-schedule .single-event[data-event=track-2]:hover {
+.cd-schedule .single-event[data-event=teknik]:hover {
 	background: lighten($event-color-2, 5%);
 }
 
@@ -355,12 +355,12 @@ Main Components
 	background: lighten($event-color-3, 5%);
 }
 
-.cd-schedule .single-event[data-event=track-4],
-.cd-schedule [data-event=track-4] .header-bg {
+.cd-schedule .single-event[data-event=keynote],
+.cd-schedule [data-event=keynote] .header-bg {
 	background: $event-color-4;
 }
 
-.cd-schedule .single-event[data-event=track-4]:hover {
+.cd-schedule .single-event[data-event=keynote]:hover {
 	background: lighten($event-color-4, 5%);
 }
 
