@@ -99,7 +99,7 @@ Meteor.startup(() => {
     Slots.insert({
         title: "DevOps - Tänk stort och starta smått",
         presenter: "Jari Aho",
-        venue: "Operetten", start: "15:30", track: "teknik"
+        venue: "Operetten", start: "15:30", track: "tänk"
     });
     Slots.insert({
         title: "Introvert, extrovert, eller mittemellan?",
@@ -110,5 +110,10 @@ Meteor.startup(() => {
         title: "Mobb-arbete: Lärdomar och fördelar",
         presenter: "Martin Andersson",
         venue: "Sopranen", start: "15:30", track: "team"
+    });
+    Slots.insert({
+        title: "Arkitektur och SaaS",
+        presenter: "Richard Tyregrim",
+        venue: "Operan", start: "15:30", track: "teknik"
     });
 });
