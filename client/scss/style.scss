@@ -337,21 +337,21 @@ Main Components
 	background: lighten($event-color-1, 5%);
 }
 
-.cd-schedule .single-event[data-event=teknik],
-.cd-schedule [data-event=teknik] .header-bg {
+.cd-schedule .single-event[data-event=product],
+.cd-schedule [data-event=product] .header-bg {
 	background: $event-color-2;
 }
 
-.cd-schedule .single-event[data-event=teknik]:hover {
+.cd-schedule .single-event[data-event=product]:hover {
 	background: lighten($event-color-2, 5%);
 }
 
-.cd-schedule .single-event[data-event=tänk],
-.cd-schedule [data-event=tänk] .header-bg {
+.cd-schedule .single-event[data-event=change ],
+.cd-schedule [data-event=change] .header-bg {
 	background: $event-color-3;
 }
 
-.cd-schedule .single-event[data-event=tänk]:hover {
+.cd-schedule .single-event[data-event=change ]:hover {
 	background: lighten($event-color-3, 5%);
 }
 
