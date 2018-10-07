@@ -17,7 +17,7 @@ Meteor.startup(() => {
     Slots.insert({
         title: "15 förlösande frågor",
         presenter: "Björn Tikkanen",
-        venue: "Operetten", start: "11:00", track: "tänk"
+        venue: "Sopranen", start: "11:00", track: "change"
     });
     Slots.insert({
         title: "Team och mångdimensionellt flyt",
@@ -27,7 +27,7 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Optimera ditt flöde - men av vaddå?",
         presenter: "Marcus Hammarberg",
-        venue: "Operetten", start: "11:30", track: "teknik"
+        venue: "Operetten", start: "11:30", track: "change"
     });
     Slots.insert({
         title: "Teamets välmående som mätvärde",
@@ -37,12 +37,12 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Do testers dream about automatic tests?",
         presenter: "Mattias Hedman",
-        venue: "Sopranen", start: "14:30", track: "teknik"
+        venue: "Sopranen", start: "14:00", track: "product"
     });
     Slots.insert({
         title: "War stories - Agilt ledarskap i verkligheten",
         presenter: "Maria Thelin",
-        venue: "Operan", start: "11:30", track: "tänk"
+        venue: "Operan", start: "14:00", track: "change"
     });
     Slots.insert({
         title: "Lunch",
@@ -60,7 +60,7 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Från e-handel direkt till fabriksgolvet - Javascript i fabriken",
         presenter: "Kristofer Skyttner",
-        venue: "Operan", start: "14:00", track: "teknik"
+        venue: "Operan", start: "11:30", track: "product"
     });
     Slots.insert({
         title: "KEYNOTE: Lean & Kanban to the rescue - Historien om Bungsu-sjukhuset",
@@ -70,7 +70,7 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Gör en vana av att tänka test",
         presenter: "Johan Jonasson",
-        venue: "Sopranen", start: "11:00", track: "teknik"
+        venue: "Operetten", start: "11:00", track: "product"
     });
     Slots.insert({
         title: "CLOSING TALK: Hur man blir innovativ i vardagen (eller på jobbet)",
@@ -89,17 +89,17 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Feedback på din roadmap",
         presenter: "Åsa Tjernvik",
-        venue: "Sopranen", start: "14:00", track: "tänk"
+        venue: "Operetten", start: "14:30", track: "product"
     });
     Slots.insert({
         title: "Förändring i Legobyn - en fabel om olika förändringsmodeller",
         presenter: "Thom Persson",
-        venue: "Operetten", start: "14:30", track: "tänk"
+        venue: "Sopranen", start: "14:30", track: "change"
     });
     Slots.insert({
         title: "DevOps - Tänk stort och starta smått",
         presenter: "Jari Aho",
-        venue: "Operetten", start: "15:30", track: "tänk"
+        venue: "Operetten", start: "15:30", track: "change"
     });
     Slots.insert({
         title: "Introvert, extrovert, eller mittemellan?",
@@ -114,6 +114,6 @@ Meteor.startup(() => {
     Slots.insert({
         title: "Arkitektur och SaaS",
         presenter: "Richard Tyregrim",
-        venue: "Operan", start: "15:30", track: "teknik"
+        venue: "Operan", start: "15:30", track: "product"
     });
 });
