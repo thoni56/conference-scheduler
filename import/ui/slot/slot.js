@@ -1,8 +1,6 @@
 import { Template } from 'meteor/templating';
 
 import './slot.html';
-import './insertSlotForm.html';
-
 
 export const startTime = "08:30";
 
